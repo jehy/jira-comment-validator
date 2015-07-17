@@ -3,14 +3,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sma.plugins</groupId>
-    <artifactId>resolution-validator</artifactId>
+    <artifactId>comment-validator</artifactId>
     <version>1.0-SNAPSHOT</version>
     <organization>
         <name>SKBSMA</name>
         <url>http://www.data-platform.ru//</url>
     </organization>
-    <name>resolution-validator</name>
-    <description>This is the com.sma.plugins:resolution-validator plugin for Atlassian JIRA.</description>
+    <name>comment-validator</name>
+    <description>This is the com.sma.plugins:comment-validator plugin for Atlassian JIRA.</description>
     <packaging>atlassian-plugin</packaging>
     <dependencies>
         <dependency>

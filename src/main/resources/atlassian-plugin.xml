@@ -9,14 +9,14 @@
     <param name="plugin-logo">images/pluginLogo.png</param>
   </plugin-info>
   <!-- add our i18n resource -->
-  <resource type="i18n" name="i18n" location="resolution-validator"/>
+  <resource type="i18n" name="i18n" location="comment-validator"/>
   <!-- add our web resources -->
-  <web-resource key="resolution-validator-resources" name="resolution-validator Web Resources">
+  <web-resource key="comment-validator-resources" name="comment-validator Web Resources">
     <dependency>com.atlassian.auiplugin:ajs</dependency>
-    <resource type="download" name="resolution-validator.css" location="/css/resolution-validator.css"/>
-    <resource type="download" name="resolution-validator.js" location="/js/resolution-validator.js"/>
+    <resource type="download" name="comment-validator.css" location="/css/comment-validator.css"/>
+    <resource type="download" name="comment-validator.js" location="/js/comment-validator.js"/>
     <resource type="download" name="images/" location="/images"/>
-    <context>resolution-validator</context>
+    <context>comment-validator</context>
   </web-resource>
   <!-- publish our component 
   <component key="myPluginComponent" class="com.sma.plugins.MyPluginComponentImpl" public="true">
@@ -24,11 +24,11 @@
   </component>-->
   <!-- import from the product container -->
   <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties"/>
-  <workflow-validator key="resolution-_validator" name="resolution _validator" i18n-name-key="resolution-_validator.name" class="com.sma.plugins.jira.workflow.resolution_validatorFactory">
-    <description key="resolution-_validator.description">The resolution validator Plugin. Resolution should not stay same.</description>
-    <validator-class>com.sma.plugins.jira.workflow.resolution_validator</validator-class>
-    <resource type="velocity" name="view" location="templates/validators/resolution-_validator.vm"/>
-    <!-- <resource type="velocity" name="input-parameters" location="templates/validators/resolution-_validator-input.vm"/>
-    <resource type="velocity" name="edit-parameters" location="templates/validators/resolution-_validator-input.vm"/> -->
+  <workflow-validator key="comment-_validator" name="comment _validator" i18n-name-key="comment-_validator.name" class="com.sma.plugins.jira.workflow.comment_validatorFactory">
+    <description key="comment-_validator.description">The comment validator Plugin. Comment should exist.</description>
+    <validator-class>com.sma.plugins.jira.workflow.comment_validator</validator-class>
+    <resource type="velocity" name="view" location="templates/validators/comment-_validator.vm"/>
+    <!-- <resource type="velocity" name="input-parameters" location="templates/validators/comment-_validator-input.vm"/>
+    <resource type="velocity" name="edit-parameters" location="templates/validators/comment-_validator-input.vm"/> -->
   </workflow-validator>
 </atlassian-plugin>

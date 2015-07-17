@@ -7,7 +7,7 @@ import com.atlassian.jira.plugin.workflow.WorkflowPluginValidatorFactory;
 import com.atlassian.jira.plugin.workflow.AbstractWorkflowPluginFactory;
 import java.util.Map;
 
-public class resolution_validatorFactory extends AbstractWorkflowPluginFactory implements WorkflowPluginValidatorFactory
+public class comment_validatorFactory extends AbstractWorkflowPluginFactory implements WorkflowPluginValidatorFactory
 {
     //public static final String FIELD_WORD="word";
 
